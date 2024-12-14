@@ -1,0 +1,382 @@
+body {
+    margin-top: -9px;
+}
+
+.header {
+    top: 2%;
+    background-color: #e20019;
+    z-index: 1;
+
+}
+
+.search {
+    overflow-y: hidden;
+
+    >i {
+        position: relative;
+        display: block;
+        transition: 0.2s;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        &:hover {
+            transform: translateY(-105%);
+        }
+    }
+}
+
+.nutellacolor {
+    color: #e20019;
+}
+
+.nutella {
+    background-color: #e20019;
+}
+
+.hei {
+    height: 526.5px;
+}
+
+.submenu {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    >a {
+        transition: 1s;
+    }
+
+    &:hover {
+        transition: 1s;
+
+        >a {
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+
+        &::after {
+            top: 30%;
+            opacity: 1;
+        }
+    }
+}
+
+.submenu1 {
+    >a {
+        transition: .4s;
+    }
+
+    &:hover {
+        transition: 1s;
+
+        >a {
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+
+        &::after {
+            top: 30%;
+            opacity: 1;
+        }
+    }
+}
+
+.menu {
+    height: 100%;
+
+    >a {
+        transition: .4s;
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        transition: .4s;
+
+        >a {
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+
+        &::after {
+            top: 30%;
+            opacity: 1;
+        }
+
+        >ul {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    >ul {
+        opacity: 0;
+        visibility: hidden;
+        transition: 1;
+    }
+}
+
+.wsubmenu {
+    width: 150%;
+}
+
+.after::after {
+    content: attr(data-content);
+    color: #e20019;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.after1::after {
+    content: attr(data-content);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    left: 0;
+    transform: translateX(-17%);
+}
+
+.line {
+    font-size: 40px;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 5px;
+    background-color: #e20019;
+    border-radius: 50px;
+}
+
+.margin {
+    margin-top: 220%;
+}
+
+.top {
+    top: 45%;
+}
+
+.bar {
+    height: 200px;
+    margin-top: -100px;
+}
+
+@media (min-width:576px) {
+    .rect {
+        aspect-ratio: 1/1;
+    }
+
+    .margin {
+        margin-top: 140%;
+    }
+}
+
+@media (min-width:768px) {
+    .top {
+        top: 60%;
+    }
+
+    .tc {
+        top: 200%;
+    }
+
+    .font {
+        color: white;
+    }
+
+    .border1 {
+        border: none;
+    }
+
+    .foot {
+        height: 250px;
+
+    }
+}
+
+@media (min-width:769px) {
+    .rect {
+        aspect-ratio: 4/5;
+    }
+
+    .margin {
+        margin-top: 13%;
+    }
+
+    .top {
+        top: 10%;
+    }
+
+    .top1 {
+        top: 30%;
+    }
+
+    .tc {
+        top: 60%;
+    }
+
+    .fc {
+        color: white;
+        background-color: #e20019;
+    }
+}
+
+@media (min-width:992px) {
+    .top {
+        top: 5%;
+    }
+
+    .tc {
+        top: 65%;
+    }
+
+}
+
+.card {
+    transition: 0.4s;
+
+    >figure {
+        >figcaption {
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        transform: translateY(2%);
+
+        >figure {
+            >figcaption {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.figcaption {
+    transition: 0.4s;
+}
+
+.push {
+    transition: 0.4s;
+    background-color: #ffffff;
+
+    &:hover {
+        color: white;
+        background-color: #e20019;
+    }
+}
+
+.border1 {
+    border-bottom: 1px solid #ba0318;
+}
+
+.fc {
+    color: white;
+}
+
+.hani{
+        width:100%;
+        gap: 2rem;
+        justify-content: center;
+        position: relative;
+        border: 1px solid red;
+    >figure{
+        >ul{
+            width: 10%;
+            position: absolute;
+            bottom: 0;
+            right: -10%;
+            flex-wrap: nowrap;
+            transition: 0.4s;
+            >li{
+                transition: 0.4s;
+                >a{
+                    color: white;
+                }
+                &:hover {
+                    width: auto;
+                    aspect-ratio: 1/1;
+                    background-color: #e20019;
+                    color: white;
+                    border-radius: 50%;
+                }
+        }
+
+        }
+        >img {
+            width: 40%;
+            z-index: 10;
+            @media (min-width:768px) {
+                width: 20%;
+            }
+            @media (min-width:992px) {
+                width: 15%;
+            }
+            object-fit: cover;
+            border-radius: 63% 37% 55% 45% / 25% 67% 33% 75%;
+            box-shadow: 1px 1px 100px white;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            /* filter: sepia(100%); */
+            animation: me 5s linear infinite alternate;
+            &:hover ~ ul{
+                right: 10%;
+            }
+        }
+    }
+}
+
+@keyframes me {
+    0% {
+        border-radius: 56% 44% 62% 38% / 45% 65% 35% 55%;
+        box-shadow: 2px 2px 12px white;
+    }
+
+    25% {
+        border-radius: 63% 37% 35% 65% / 53% 50% 50% 47%;
+        box-shadow: 3px 3px 14px white;
+    }
+
+    50% {
+        border-radius: 41% 59% 62% 38% / 74% 26% 74% 26%;
+        box-shadow: 4px 4px 15px white;
+    }
+
+    75% {
+        border-radius: 56% 44% 62% 38% / 45% 65% 35% 55%;
+        box-shadow: 3px 3px 14px white;
+    }
+
+    100% {
+        border-radius: 63% 37% 55% 45% / 25% 67% 33% 75%;
+        ;
+        box-shadow: 2px 2px 12px white;
+    }
+}
